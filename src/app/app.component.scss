@@ -1,0 +1,32 @@
+main{
+    background-image: url('../assets/imgs/background.jpg');
+    header{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        img{
+            width: 500px;
+        }
+        form{
+            width: fit-content;
+            background: #FFF;
+            border-radius: 6px;
+            padding: 4px;
+            input{
+                border: none;
+                font-size: 1.5rem;
+            }
+            input:focus{
+                outline: none;
+            }
+            button{
+                font-size: 1.5rem;
+                padding: 4px;
+                border: none;
+                background: none;
+                width: auto;
+            }
+        }
+    }
+}
