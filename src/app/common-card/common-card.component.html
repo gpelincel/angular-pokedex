@@ -1,9 +1,14 @@
-<div class="card">
-    <img class="poke-img" src="https://via.placeholder.com/150" alt="">
-    <p>#001</p>
-    <h3 class="poke-name">Hello World</h3>
-    <div class="poke-types">
-      <div class="type-pill poison">Poison</div>
-      <div class="type-pill normal">Nature</div>
+<div id="poke-grid">
+  <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
+    <div class="card">
+      <img class="poke-img"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/{{pokemon.status.id}}.svg"
+        alt="">
+      <p>#{{pokemon.status.id}}</p>
+      <h3 class="poke-name">{{pokemon.name}}</h3>
+      <div class="poke-types">
+        <div *ngFor="let value of pokemon.status.types" class="type-pill {{value.type.name}}">{{value.type.name}}</div>
+      </div>
     </div>
-  </div>
+  </ng-template>
+</div>

@@ -1,7 +1,18 @@
+#poke-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
 .card {
     background: #FFF;
     padding: 20px;
     border-radius: 2px;
+
+    img{
+        height: 150px;
+        width: 150px;
+    }
 
     .poke-types {
         display: flex;
@@ -24,7 +35,7 @@
         }
 
         .water {
-            background: '#6390F0';
+            background: #6390F0;
         }
 
         .electric {
