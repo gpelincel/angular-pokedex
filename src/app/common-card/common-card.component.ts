@@ -12,6 +12,13 @@ export class CommonCardComponent {
 
   constructor(public pokemonService: PokemonService){}
 
+  
+  showModal(){
+    document.querySelector('.modal-wrapper')?.setAttribute("hidden", "false");
+  }
+  hideModal(){
+  }
+
   ngOnInit() : void {
     this.pokemonService.loadPokemons.subscribe(res => {
       this.getAllPokemons = res.results;

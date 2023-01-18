@@ -1,0 +1,141 @@
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #00000050;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+    .poke-modal {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 10% auto;
+        background: #FFF;
+        padding: 30px;
+        border-radius: 10px;
+
+        .close-btn {
+            padding: 0;
+            text-align: end;
+            font-size: 2vw;
+            text-decoration: none;
+            color: #00000030;
+        }
+
+        .modal-header {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .poke-name {
+                .poke-types {
+                    gap: 10px;
+                    display: flex;
+                    .type-pill {
+                        font-size: 0.8rem;
+                        border-radius: 10px;
+                        padding: 6px 10px;
+                        text-align: center;
+                    }
+
+                    .normal {
+                        background: #A8A77A;
+                    }
+
+                    .fire {
+                        background: #EE8130;
+                    }
+
+                    .water {
+                        background: #6390F0;
+                    }
+
+                    .electric {
+                        background: #F7D02C;
+                    }
+
+                    .grass {
+                        background: #7AC74C;
+                    }
+
+                    .ice {
+                        background: #96D9D6;
+                    }
+
+                    .fighting {
+                        background: #C22E28;
+                    }
+
+                    .poison {
+                        background: #A33EA1;
+                    }
+
+                    .ground {
+                        background: #E2BF65;
+                    }
+
+                    .flying {
+                        background: #A98FF3;
+                    }
+
+                    .psychic {
+                        background: #F95587;
+                    }
+
+                    .bug {
+                        background: #A6B91A;
+                    }
+
+                    .rock {
+                        background: #B6A136;
+                    }
+
+                    .ghost {
+                        background: #735797;
+                    }
+
+                    .dragon {
+                        background: #6F35FC;
+                    }
+
+                    .dark {
+                        background: #705746;
+                    }
+
+                    .steel {
+                        background: #B7B7CE;
+                    }
+
+                    .fairy {
+                        background: #D685AD;
+                    }
+                }
+
+                h1 {
+                    font-size: 4vw;
+                }
+            }
+
+            img {
+                padding-right: 40px;
+            }
+        }
+
+        .modal-body {
+            display: flex;
+            justify-content: center;
+
+            table {
+                width: 50%;
+                border-collapse: collapse;
+
+                tr {
+                    border-bottom: #000 1px solid;
+                }
+            }
+        }
+    }
+}

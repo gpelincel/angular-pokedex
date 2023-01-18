@@ -1,6 +1,6 @@
 <div id="poke-grid">
   <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
-    <div class="card">
+    <div class="card" (click)="showModal()">
       <img class="poke-img"
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/{{pokemon.status.id}}.svg"
         alt="">
@@ -11,4 +11,6 @@
       </div>
     </div>
   </ng-template>
+
+  <app-poke-modal></app-poke-modal>
 </div>
